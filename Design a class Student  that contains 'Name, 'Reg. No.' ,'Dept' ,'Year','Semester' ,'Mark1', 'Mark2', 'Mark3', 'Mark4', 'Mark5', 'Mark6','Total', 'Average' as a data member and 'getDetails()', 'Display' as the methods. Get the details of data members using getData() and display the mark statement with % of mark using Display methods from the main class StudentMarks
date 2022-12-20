@@ -1,0 +1,45 @@
+
+import java.util.Scanner;
+class Student
+{
+    String Name,dept,year;
+    int reg,total,sem,m1,m2,m3,m4,m5;
+    int avg;
+    void Student(String name,String dep,String yr,int regs)
+    {
+        Name=name;
+        dept=dep;
+        year=yr;
+        reg=regs;
+    }
+    
+    public void display(int m1,int m2,int m3,int m4,int m5)
+    {
+        total=m1+m2+m3+m4+m5;
+        avg=total/5;
+        System.out.print("Name "+Name+"dept "+dept+"year "+year+"reg no "+reg+"total "+total+"avg "+avg);
+    }
+    
+}
+class Main
+{
+    public static void main(String args[])
+    {
+        Student s=new Student();
+        Scanner sc=new Scanner(System.in);
+        int ma1,ma2,ma3,ma4,ma5,reg;
+        String name,dep,yr;
+        ma1=sc.nextInt();
+        ma2=sc.nextInt();
+        ma3=sc.nextInt();
+        ma4=sc.nextInt();
+        ma5=sc.nextInt();
+        reg=sc.nextInt();
+        name=sc.nextLine();
+        dep=sc.nextLine();
+        yr=sc.nextLine();
+        //s.getData(ma1,ma2,ma3,ma4,ma5);
+        s.Student(name,dep,yr,reg);
+        s.display(ma1,ma2,ma3,ma4,ma5);
+    }
+}
