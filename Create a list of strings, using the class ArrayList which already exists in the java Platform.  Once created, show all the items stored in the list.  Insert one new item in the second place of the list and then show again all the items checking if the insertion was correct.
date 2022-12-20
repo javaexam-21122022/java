@@ -1,0 +1,14 @@
+import java.util.*;
+public class Arraylist{ 
+public static void main(String args[]){ 
+ArrayList<String> list = new ArrayList<String>(); 
+list.add("Potato"); 
+System.out.println("Before Inserting:");
+list.add("Carrot");
+list.add("Tomato");
+System.out.println(list); 
+list.add(1, "Pumpkin");
+System.out.println("After Inserting:");
+ System.out.println(list);
+}
+}
