@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Itpark {
+    static double width,height,depth;
+    Itpark(double w,double h,double d){
+       double width=w;
+       double height=h;
+       double depth=d;
+    }
+    static double dimention(double width,double height,double depth) {
+       return width*height*depth;
+    }
+}
+
+class classroom{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        double a=sc.nextDouble();
+        double b=sc.nextDouble();
+        double c=sc.nextDouble();
+        
+        Itpark it=new Itpark(a,b,c);
+        Itpark it1=new Itpark(a,c,b);
+        Itpark it2=new Itpark(c,a,b);
+        
+        double dim=0.0;
+        dim=Itpark.dimention(a,b,c);
+        System.out.println("Dimension of class1:"+dim);
+        
+        dim=Itpark.dimention(a,c,b);
+        System.out.println("Dimension of class1:"+dim);
+        
+        dim=Itpark.dimention(c,a,b);
+        System.out.println("Dimension of class1:"+dim);
+    }
+}
+
+
+
