@@ -1,0 +1,15 @@
+import java.util.*;  
+class SampleCollection {  
+  
+        public static void main(String [] args)  
+        {  
+          ArrayList<String> obj=new ArrayList<String>();  
+          obj.add("ObjectA");    
+          obj.add("ObjectB");    
+          obj.add("ObjectC");   
+          obj.add("ObjectD");  
+          System.out.println("An initial list of elements: "+ obj);   
+          obj.remove(1);  
+          System.out.println("After invoking remove(index) method: "+ obj);  
+        }
+     }
