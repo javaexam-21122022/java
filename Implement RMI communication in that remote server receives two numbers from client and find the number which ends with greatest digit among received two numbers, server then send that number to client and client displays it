@@ -1,0 +1,28 @@
+import java.rmi.*;
+import java.rmi.server.*;
+import java.util.*;
+public class RMIServer extends UnicastRemoteObject implements RMIServerI{
+public RMIServer()throws RemoteException{
+    super();
+}
+public int getgreatest(int n1,int n2){
+    int great;
+    int n3=n1%10;
+    int n4=n2%10;
+    if(n3>n4)
+        great=n1;
+    else
+        great=n2;
+        return great;
+    }
+public static void main(String args[]){
+try {
+        RMIServer server=new RMIServer();
+        Naming.rebind("rmi://localhost:1099/RMIServer",server);
+}
+catch(Exception e){
+    System.out.println(e);
+    }
+}
+
+}
