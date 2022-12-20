@@ -1,0 +1,23 @@
+import java.util.*;
+public class Listmodify{ 
+    public static void main(String args[]){ 
+        ArrayList<String> flavour = new ArrayList<String>(); 
+        System.out.println("Before Modifying:");
+        flavour.add("Butterscotch");
+        flavour.add("Pista");
+        flavour.add("Chocolate");
+        flavour.add("Cottoncandy");
+        System.out.println(flavour); 
+        flavour.set(1, "Blackcurrent");
+        System.out.println("After Modifying:");
+        System.out.println(flavour);
+        String[] array = flavour.toArray(new String[0]);
+        System.out.println("After converting Arraylist into Array:");
+         for(String S : array)
+         {
+             System.out.println(S);
+         }
+    }
+}
+
+
