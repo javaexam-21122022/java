@@ -1,0 +1,18 @@
+interface Arith {
+  public void subtract(); 
+}
+
+class ArithIntegerOperations implements Arith {
+  public void subtract() {
+    System.out.println(10-5);
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+     ArithIntegerOperations sub = new  ArithIntegerOperations();
+    sub.subtract();
+  }
+}
+
+
