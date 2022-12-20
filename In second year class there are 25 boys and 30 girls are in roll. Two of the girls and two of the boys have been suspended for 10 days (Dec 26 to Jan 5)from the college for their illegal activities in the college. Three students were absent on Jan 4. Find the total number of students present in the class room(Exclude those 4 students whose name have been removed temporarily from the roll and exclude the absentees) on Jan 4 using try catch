@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int boys=25;  
+        int girls=30;
+        int suspend=4;
+        int absent=3;
+        int TotalPresent;  
+        try  
+        {  
+        TotalPresent=boys+girls-suspend-absent;  
+        System.out.println("Total Present on Jan 4th are " + TotalPresent);
+        }  
+        catch(Exception e)  
+        {  
+            System.out.println(e);  
+        }  
+	}
+}
