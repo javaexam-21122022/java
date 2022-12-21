@@ -1,0 +1,13 @@
+
+import java.util.*;
+public class Withdraw{
+public static void main(String args[]){
+Scanner sc = new Scanner(System.in);
+int available_amt = sc.nextInt();
+int withdraw_amt = sc.nextInt();
+if(available_amt>withdraw_amt){
+System.out.println("Amount can be withdrawn");
+}
+else{
+System.out.println("Amount insufficient");
+}
